@@ -25,8 +25,8 @@ public class Contact {
     }
 
 
-    public String setContactString(){
-        return this.name + " | " + this.phone + " |";
+    public String toString(){
+        return this.name + "," + this.phone;
 
     }
 }
