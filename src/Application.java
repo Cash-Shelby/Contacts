@@ -24,11 +24,7 @@ public class Application {
             scanner.nextLine();
             switch(option){
                 case 1:
-                    System.out.println("Name \t | Phone Number |");
-                    System.out.println("---------------------------");
-                    for(Contact c : contactObject) {
-                        System.out.println(c.getName() + " | " + c.getPhone());
-                    }
+                    contactList();
                     break;
                 case 2:
                     addContact();
@@ -42,7 +38,7 @@ public class Application {
                     deleteContact();
                     break;
                 case 5:
-                    writeContacts();
+                    contactList();
                     shouldContinue = false;
                     break;
             }
@@ -104,6 +100,13 @@ public class Application {
         }
     }
 
+    public static void contactList(){
+        System.out.println("Name \t | Phone Number |");
+        System.out.println("---------------------------");
+        for(Contact c : contactObject) {
+            System.out.println(c.getName() + " | " + c.getPhone());
+        }
+    }
     public static void addContact(){
         System.out.println("Enter name: ");
         String name = scanner.nextLine();
