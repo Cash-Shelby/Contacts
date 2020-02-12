@@ -38,9 +38,11 @@ public class Application {
             switch (option) {
                 case 1:
                     writeContacts();
+                    System.out.println("______________");
                     break;
                 case 2:
                     addContact();
+                    System.out.println("______________");
                     break;
                 case 3:
                     searchContact();
