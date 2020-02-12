@@ -1,4 +1,4 @@
-package src;
+package ContactManager;
 public class Contact {
 
     private  String phone;
@@ -24,9 +24,8 @@ public class Contact {
         this.phone = phone;
     }
 
-
-    public String toString(){
-        return this.name + "," + this.phone;
+    public String setContactString(){
+        return this.name + " | " + this.phone;
 
     }
 }
