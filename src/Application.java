@@ -1,16 +1,13 @@
 package src;
 
-import javax.naming.Name;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-//import java.util.List;
 import java.util.Scanner;
 
 public class Application {
@@ -117,7 +114,7 @@ public class Application {
     }
 
     public static void deleteContact(){
-        System.out.println("Enter the name of the contact you would like to delete:: ");
+        System.out.println("Enter the name of the contact you would like to delete: ");
         Contact choice = searchContact(scanner.nextLine());
         if(choice != null) {
             contactObject.remove(choice);
@@ -135,6 +132,4 @@ public class Application {
         }
         return null;
     }
-
-
 }
